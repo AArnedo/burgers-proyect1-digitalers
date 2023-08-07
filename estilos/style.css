@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 header{
     background-image: url(../img/background-hero.jpg);
@@ -79,3 +80,98 @@ header::before {
     height: 50px;
     filter: invert(100%);
 }
+
+/* Seccion Nosotros y ¿porque elegirnos? */
+
+.nosotros{
+    width: 100%;
+    background-image: url(../img/background-seccion2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-section{
+    background: #8585859c;
+    border-radius: 60px;
+    padding: 20px 0;
+}
+.container-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.txt-nosotros{
+    width: 35%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.txt-nosotros h2{
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.txt-nosotros p{
+    font-family: 'Rancho', cursive;
+    color: #ffffff;
+    font-size: 36px;
+}
+.img-nosotros img{
+    width: 500px;
+    clip-path: ellipse(45% 42% at 50% 50%);
+}
+
+/* ¿porque elegirnos? */
+
+.container-pq-elegirnos{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lines-effect h1{
+    display: inline-block;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-weight: 600;
+}
+.lines-effect h1::after , .lines-effect h1::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+.lines-effect h1::before{
+    left: -350px;
+}
+.lines-effect h1::after{
+    right: -350px;
+}
+.container-img-txt{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-txt{
+    padding: 0 60px;
+}
+.img-txt h3{
+    width: 180px;
+    font-family: 'Rancho', cursive;
+    color: #ffff;
+    font-size: 36px;
+    text-align: center;
+}
+.img-txt img{
+    width: 180px;
+    height: 180px;
+}
+
+/* Seccion Footer */
