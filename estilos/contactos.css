@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+ 
+
+   main{
+    background-image: url(../img/background-formulario.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+   /* Navbar */
+    .navbar{
+        height: 120px;
+    }
+    .navbar-brand img{
+        width: 120px;
+        height: 120px;
+    }
+    .navbar-nav{
+        font-size: 45px;
+        text-decoration: underline 3px #ff6600;
+    }
+    .nav-item{
+        padding-right: 30px;
+    }
+    .nav-item a{
+        color: #ffff;
+        font-family: 'Rancho', cursive;
+    }
+    .nav-item a:hover{
+        color: #ff6600;
+        animation:shake-vertical 0.8s linear both
+    }
+    @keyframes shake-vertical{
+        0%,100%
+            {transform:translateY(0)}
+        10%,30%,50%,70%
+            {transform:translateY(-8px)}
+        20%,40%,60%
+            {transform:translateY(8px)}
+        80% 
+            {transform:translateY(6.4px)}
+        90%
+            {transform:translateY(-6.4px)}
+    }
+
+    .container-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 80%;
+        width: 600px;
+        margin-left: 150px;
+        background-color: #4342429d;
+        border-radius: 50px;
+    }
+    .container-form h1{
+        width: 80%;        
+        font-family: 'Bree Serif', serif;
+        color: #ffff;
+        font-size: 42px;
+        text-transform: uppercase;
+        user-select: none;
+    }
+
+    form{
+        width: 550px;
+        display: flex;
+        position: absolute;
+        left: 25%;
+        top: 30%;
+        flex-direction: column;
+        background-color: #a8a8a8;
+        padding: 30px;
+        border-radius: 20px;
+        user-select: none;
+    }
+    form label{
+        font-family: 'Rancho', cursive;
+        font-size: 24px;
+        color: #000;
+    }
+    
+  
