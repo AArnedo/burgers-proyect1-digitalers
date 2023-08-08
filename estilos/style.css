@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
+/* Seccion Main */
 header{
     background-image: url(../img/background-hero.jpg);
     width: 100%;
@@ -40,7 +41,7 @@ header::before {
     font-family: 'Bree Serif', serif;
 }
 .nav-item a:hover{
-    color: #ff9100;  
+    color: #ff6600;
     animation:shake-vertical 0.8s linear both
 }
 @keyframes shake-vertical{
@@ -53,7 +54,10 @@ header::before {
     80% 
         {transform:translateY(6.4px)}
     90%
-        {transform:translateY(-6.4px)}}
+        {transform:translateY(-6.4px)}
+}
+
+/* Seccion Hero */
 .container-hero{
     width: 100%;
     height: 85vh;
@@ -61,12 +65,11 @@ header::before {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 .container-hero h1{
     color: #ffff;
-    font-size: 60px;
-    font-weight: 800;
+    font-size: 58px;
     font-family: 'Bree Serif', serif;
     user-select: none;
     z-index: 1;
@@ -105,11 +108,18 @@ header::before {
     align-items: center;
 }
 .container-enlaces-hero a img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     filter: invert(100%);
 }
-
+.container-enlaces-hero a img:hover{
+    animation:rotate-scale-down .8s linear both;
+}
+@keyframes rotate-scale-down{
+    0%{transform:scale(1) rotateZ(0)}
+    50%{transform:scale(.5) rotateZ(180deg)}
+    100%{transform:scale(1) rotateZ(360deg)}
+}
 
 /* Seccion Nosotros y ¿porque elegirnos? */
 .nosotros{
@@ -118,9 +128,10 @@ header::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 50px 0;
 }
 .container-section{
-    background: #8585859c;
+    background: #02020293;
     border-radius: 60px;
     padding: 20px 0;
 }
@@ -130,14 +141,16 @@ header::before {
     justify-content: space-around;
 }
 .txt-nosotros{
-    width: 35%;
+    width: 40%;
     margin-top: 50px;
     margin-left: 50px;
 }
 .txt-nosotros h2{
     font-family: 'Playfair Display', serif;
-    color: #000;
-    font-size: 48px;
+    color: #ffce9f;
+    text-decoration:underline 2px;
+    font-size: 38px;
+    user-select: none;
     text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: 600;
@@ -145,11 +158,12 @@ header::before {
 .txt-nosotros p{
     font-family: 'Rancho', cursive;
     color: #ffffff;
+    user-select: none;
     font-size: 36px;
 }
 .img-nosotros img{
     width: 500px;
-    clip-path: ellipse(45% 42% at 50% 50%);
+    clip-path: ellipse(50% 40% at 50% 50%);
 }
 
 
@@ -164,15 +178,17 @@ header::before {
     display: inline-block;
     position: relative;
     font-family: 'Playfair Display', serif;
-    color: #000;
+    color: #ffffff;
+    user-select: none;
     font-weight: 600;
+    font-size: 38px;
 }
 .lines-effect h1::after , .lines-effect h1::before{
     content: '';
     position: absolute;
     width: 250px;
     height: 2px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     top: 0.6em;
 }
 .lines-effect h1::before{
@@ -195,12 +211,14 @@ header::before {
     width: 150px;
     font-family: 'Rancho', cursive;
     color: #ffff;
+    user-select: none;
     font-size: 36px;
     text-align: center;
 }
 .img-txt img{
     width: 150px;
     height: 150px;
+    filter: invert(100%);
 }
 
 
@@ -209,11 +227,10 @@ footer{
     width: 100%;
 }
 .map-container iframe{
-    padding: 20px;
     width: 100%;
 }
 .container-footer{
-    background-color: #C88300;
+    background-color: #fca400;
 }
 
 .container-enlaces-footer{
@@ -221,7 +238,7 @@ footer{
     padding: 70px 0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .enlace-txt{
@@ -236,6 +253,7 @@ footer{
 .enlace-txt h3{
     font-family: 'Playfair Display', serif;
     color: #000;
+    user-select: none;
 }
 .linea-decorativa{
     padding-bottom: 30px;
@@ -248,6 +266,7 @@ footer{
 }
 .txt-copyright h5{
     color: #000;
+    user-select: none;
 }
 
 
