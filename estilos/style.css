@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 /* Seccion Main */
-.background{
+.container-background{
     background-image: url(../img/background-hero.jpg);
     width: 100%;
     height: 100vh;

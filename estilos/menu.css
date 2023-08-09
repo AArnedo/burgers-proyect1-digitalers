@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+/* font-family: 'Bree Serif', serif; */
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Rancho', cursive; */
+
+main{
+    background-image: url(../img/background-menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    height: 120px;
+}
+.navbar h1{
+    position: absolute;
+    left: 45%;
+    color: #ffff;
+    font-family: 'Rancho', cursive;
+    font-size: 64px;
+    user-select: none;
+}
+.navbar-nav{
+    font-size: 45px;
+    text-decoration: underline 3px #ff6600;
+}
+.nav-item{
+    padding-right: 30px;
+}
+.nav-item a{
+    color: #ffff;
+    font-family: 'Rancho', cursive;
+    font-size: 38px;
+}
+.nav-item a:hover{
+    color: #ff6600;
+    animation:shake-vertical 0.8s linear both
+}
+@keyframes shake-vertical{
+    0%,100%
+        {transform:translateY(0)}
+    10%,30%,50%,70%
+        {transform:translateY(-8px)}
+    20%,40%,60%
+        {transform:translateY(8px)}
+    80% 
+        {transform:translateY(6.4px)}
+    90%
+        {transform:translateY(-6.4px)}
+}
+
+article{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    user-select: none;
+}
+article:hover{
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 10px;
+}
+
+.p-menu h4{
+    font-family: 'Rancho', cursive;
+    color: #E0A968;
+    font-size: 48px;
+}
+.menu2 , .menu4 , .menu6{
+    flex-direction: row-reverse;
+}
+.img-menu img{
+    width: 360px;
+    height: 250px;
+    margin: 0 20px;
+    border: 2px solid #FFCD1C;
+    
+}
+.p-menu{
+    font-family: 'Rancho', cursive;
+    color: #ffffff;
+    font-size: 38px;
+}
