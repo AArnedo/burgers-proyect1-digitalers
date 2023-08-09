@@ -10,7 +10,6 @@ main{
     background-image: url(../img/background-galery-photograp.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     width: 100%;
 }
 
@@ -19,7 +18,7 @@ main{
 }
 .navbar h1{
     position: absolute;
-    left: 15%;
+    left: 30%;
     color: #ffff;
     font-family: 'Rancho', cursive;
     font-size: 62px;
@@ -54,7 +53,7 @@ main{
         {transform:translateY(-6.4px)}
 }
 
-.carousel{
+/* .carousel{
     position: absolute;
     left: 10%;
     top: 60px;
@@ -68,3 +67,21 @@ main{
     width: 400px;
     height: 500px;
 }
+ */
+
+ .galery-container{
+    min-height: 100vh;
+    width: 80%;
+    outline: 4px solid #ff6600;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: 10px;
+ }
+ .galery-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
