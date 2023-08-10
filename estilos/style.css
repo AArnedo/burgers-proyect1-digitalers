@@ -4,7 +4,7 @@
 
 /* Seccion Main */
 .container-background{
-    background-image: url(../img/background-hero.jpg);
+    background-image: url(../img/background-hero-min.jpg);
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -68,7 +68,7 @@ header::before {
     padding: 50px 0;
 }
 .container-hero h1{
-    color: #ffff;
+    color: #ffffff;
     font-size: 58px;
     font-family: 'Bree Serif', serif;
     user-select: none;
@@ -169,10 +169,10 @@ header::before {
 
 /* ¿porque elegirnos? */
 .container-pq-elegirnos{
-    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .lines-effect h1{
     display: inline-block;
@@ -273,8 +273,91 @@ footer{
 
 
 /* MEIDAS QUERY */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .lines-effect h1::after , .lines-effect h1::before{
         display: none;
     }
+    .container-hero h1{
+        font-size: 42px;
+    }
+    .img-txt img{
+        width: 100px;
+        height: 100px;
+        filter: invert(100%);
+    }
+    .container-img-txt{
+        width: 80%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .navbar-nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #ff6600a6;
+        border-radius: 20px;
+    }
+    .nav-item a{
+        color: #ffff;
+    }
+    .nav-item a:hover{
+        color: #000;
+    }
+    .container-hero{
+        width: 100%;
+        position: relative;
+    }
+    .container-hero h1{
+    display: none;
+    }
+    .container-enlaces-hero{
+        width: 50%;
+        height: 80px;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        top: 80%;
+        left: 25%;
+    }
+    .container-hero h2{
+        width: 80%;
+        align-content: center;
+        position: absolute;
+        top: 40%;
+    }
+    .txt-nosotros{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .txt-nosotros p{
+        font-size: 28px
+    }
+    .img-nosotros img{
+    width: 300px;
+    clip-path: ellipse(50% 40% at 50% 50%);
+    }
+    .lines-effect h1{
+        font-size: 32px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #ff6600;
+    }
+    .container-img-txt{
+        display: flex;
+        flex-wrap:  wrap;
+    }
+    .enlace-txt img {
+        width: 80px;
+        height: 80px;
+    }
+    .enlace-txt h3{
+        font-size: 16px;
+    }
+}
+
