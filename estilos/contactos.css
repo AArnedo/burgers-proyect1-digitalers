@@ -53,7 +53,7 @@
         justify-content: flex-start;
         align-items: flex-end;
         height: 80%;
-        width: 600px;
+        width: 40%;
         margin-left: 150px;
         background-color: #4342429d;
         border-radius: 50px;
@@ -68,7 +68,7 @@
     }
 
     form{
-        width: 550px;
+        width: 40%;
         display: flex;
         position: absolute;
         left: 25%;
@@ -83,6 +83,36 @@
         font-family: 'Rancho', cursive;
         font-size: 24px;
         color: #000;
+    }
+
+
+    @media screen and (max-width: 1200px){
+        form{
+            width: 70%;
+            transform: scale(70%,80%);
+            left: 10%;
+          }
+    }
+    @media screen and (max-width: 768px){
+        .container-form{
+            width: 75%;
+            margin: 20px 30px;
+        }
+        .container-form h1{
+            font-size: 30px;
+            padding-top: 20px;
+        }
+        form{
+          width: 100%;
+          transform: scale(70%,70%);
+        }
+        .navbar-nav{
+            width: 150px;
+            display: flex;
+            align-items: end;
+            background-color: #ff6600;
+            border-radius: 20px;
+        }
     }
     
   
