@@ -69,3 +69,26 @@ main{
     height: 100%;
     object-fit: cover;
  }
+
+ @media screen and (max-width: 768px) {
+
+    .navbar-toggler{
+        filter: invert(100%);
+        border: none;
+    }
+
+    .navbar-nav{
+        position: absolute;
+        top: 120px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #ff6600;
+        border-radius: 20px;
+    }
+    .navbar h1{
+        font-size: 40px;
+    }
+}
+
+ 

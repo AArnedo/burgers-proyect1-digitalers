@@ -52,6 +52,12 @@ main{
         {transform:translateY(-6.4px)}
 }
 
+
+.container{
+    display: grid;
+    grid-template-columns:
+    repeat(1, minmax(min(100px, 100%), 1fr));
+}
 article{
     width: 100%;
     display: flex;
@@ -76,11 +82,54 @@ article:hover{
     width: 360px;
     height: 250px;
     margin: 0 20px;
-    border: 2px solid #FFCD1C;
-    
+    border: 2px solid #FFCD1C; 
 }
 .p-menu{
     font-family: 'Rancho', cursive;
     color: #ffffff;
     font-size: 38px;
+}
+
+/* Medias Query */
+@media screen and (max-width: 768px) {
+    .navbar-toggler{
+        filter: invert(100%);
+        border: none;
+    }
+
+    .navbar-nav{
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #ff6600;
+        border-radius: 20px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns:
+        repeat(1, minmax(min(200px, 100%), 1.5fr));
+        gap: 20px;
+    }
+    article{
+        width: 100%;
+        padding: 20px 0;
+    }
+    article .p-menu{
+        position: absolute; 
+        left: 10%;
+        font-size: 30px;
+    }
+    .img-menu img{
+        opacity: .6;
+        width: 90%;
+        height: 100%;
+    }  
+}
+
+@media screen and (max-width: 375px){
+    article .p-menu{
+        font-size: 24px;
+    }
 }

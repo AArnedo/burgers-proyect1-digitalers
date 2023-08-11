@@ -298,6 +298,11 @@ footer{
         background-color: #ff6600a6;
         border-radius: 20px;
     }
+    .navbar-toggler{
+        filter: invert(100%);
+        
+    }
+
     .nav-item a{
         color: #ffff;
     }
